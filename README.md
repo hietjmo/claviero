@@ -1,4 +1,4 @@
-[alt text](https://github.com/hietjmo/claviero/blob/main/keymap-claviero-1.png?raw=true)
+[keymap-claviero-1.png](https://github.com/hietjmo/claviero/blob/main/keymap-claviero-1.png?raw=true)
 
 - **Control-X**: Exit.
 - **Control-I**: Toggle between info-screen and keymap image.
