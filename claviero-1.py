@@ -536,7 +536,7 @@ def draw_res (ct,resline,hugelines=[],info=False):
       ct.move_to (914-width,ot1 + (i+1)*1.10*fsize)
       ct.show_text (line)
 
-def save_resultlog (self,wtot):
+def save_resultlog (self):
   print ("save_resultlog")
   r = defaultdict (lambda: [])
   for k,v in self.presses.items():
@@ -552,7 +552,7 @@ def save_resultlog (self,wtot):
     q.append ((k,c))
   q.sort (key=lambda x: x[1])
   f = open ("resultlog.txt","a")
-  f.write (f"# {wtot}\n")
+  f.write (f"# {self.alltimekeys}\n")
   for a,b in q:
     f.write (f"{a} {b:.4f}\n")
   f.close()
@@ -569,8 +569,8 @@ def calc_speed (self,chars):
   wtot = self.alltimekeys + self.total
   # if args.log3:
   #  print (wtot)
-  if wtot % 25000 == 0:
-    save_resultlog (self,wtot)
+  #if wtot % 25000 == 0:
+  #  save_resultlog (self,wtot)
   # print (self.latter)
 
 def save_score (self,wpm3,ers):
@@ -581,6 +581,7 @@ def save_score (self,wpm3,ers):
     else:
       inx += 1
   if inx < 31 or self.savecapture > 1:
+    print ("Capture added.")
     self.capture.append ([wpm3,self.keys,self.ers])
     if self.savecapture > 1:
       self.savecapture = 1
@@ -821,6 +822,7 @@ def handle_key_press (self, widget, event):
 
 def do_quit (self,widget,event):
   self.alltimekeys += self.total
+  save_resultlog (self)
   if self.starttime:
     self.usage += round (time.time() - self.starttime)
   if not args.parolas:
