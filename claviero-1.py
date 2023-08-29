@@ -738,7 +738,7 @@ def add_key (self):
     now = time.time ()
     c = self.current [-1:]
     if c and self.oldtot < self.total:
-      self.keys.append ((now,c))
+      self.keys.append ([now,c])
       # print (len(self.keys),c)
       self.oldtot = self.total
     if self.gotwronglen == 0 and self.timeold:
