@@ -1,7 +1,6 @@
 
 """
-python claviero-1.py --ordine /vldcxwmuypj/trsngfeaoik/qhbzåöä,.-/ --keycapfont UnDotum --keycapfontsize 24
-python claviero-1.py --ordine /drpmfwcuygj/tlsnvqeaoik/xbzhåöä,.-/ --keycapfont UnDotum --keycapfontsize 24
+python claviero-1.py --ordine /pmdrfwcuygj/tlsnvqeaoik/xbzhåöä,.-/ --keycapfont UnDotum --keycapfontsize 24
 python claviero-1.py -order /qwertyuiopå/asdfghjklöä/zxcvbnm,.-/ --keycapfont UnDotum --keycapfontsize 24
 python claviero-1.py -order /qwertyuiopå/asdfghjklöä/zxcvbnm,.-/ --createpic
 Use EAIONSTRLUCDPMVBGHFQXJYKZW from
