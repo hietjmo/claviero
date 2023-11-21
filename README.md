@@ -5,7 +5,7 @@
 - **Control-S**: Save captured key-presses (quietly) for current 2-minute interval.
 
 ```
-python claviero-1.py --ordine /dlpmfwcuygj/trsnvqeaoik/xbzhåöä,.-/ --keycapfont UnDotum --keycapfontsize 24
+python claviero-1.py --ordine /pmdrfwcuygj/tlsnvqeaoik/xbzhåöä,.-/ --keycapfont UnDotum --keycapfontsize 24
 python claviero-1.py -order /qwertyuiopå/asdfghjklöä/zxcvbnm,.-/ --keycapfont UnDotum --keycapfontsize 24
 
 requires: cairo, gi ('Gtk', '3.0')
